@@ -5,7 +5,7 @@ import { load, save, getMe, setMe } from './store.js'
 const som = (n) => Number(n || 0).toLocaleString('uz-UZ').replace(/,/g, ' ') + " so'm"
 const pad = (n) => String(n).padStart(2, '0')
 const ds = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
-const todayStr = () => ds(new Date())
+const todayStr = () => ds(new Date())  
 const days = (n) => Array.from({ length: n }, (_, i) => { const d = new Date(); d.setDate(d.getDate() + i); return d })
 const WD = ['Yak', 'Dush', 'Sesh', 'Chor', 'Pay', 'Jum', 'Shan']
 const MO = ['yan', 'fev', 'mar', 'apr', 'may', 'iyun', 'iyul', 'avg', 'sen', 'okt', 'noy', 'dek']
@@ -13,7 +13,7 @@ const dLabel = (s) => { const [, m, d] = s.split('-').map(Number); return `${d}-
 const rng = (b) => `${pad(b.hour)}:00–${pad(b.hour + b.hours)}:00`
 const HOURS = Array.from({ length: 16 }, (_, i) => i + 8)
 const FALLBACK = 'img/default.jpg'
-const ROLE = { customer1: 'Buyurtma beruvchi 1', customer2: 'Buyurtma beruvchi 2', owner: 'Qabul qiluvchi' }
+const ROLE = { customer1: 'Buyurtma beruvchi 1', customer2: 'Buyurtma  f  beruvchi 2', owner: 'Qabul qiluvchi' }
 const ST = {
   kutilmoqda: ['Kutilmoqda', 'bg-blue-500/20 text-blue-200 border border-blue-400/40'],
   qabul: ['Qabul qilindi', 'bg-green-500/20 text-green-300 border border-green-400/40'],
