@@ -1,0 +1,19 @@
+MAYDON.UZ — ISHGA TUSHIRISH
+
+1-YO'L (eng oson, internet va npm kerak emas):
+  dist papkasidagi index.html faylini brauzerda oching (ikki marta bosing).
+  Hammasi ishlaydi. (Chrome tavsiya etiladi)
+
+2-YO'L (kodni o'zgartirmoqchi bo'lsangiz):
+  1. Node.js o'rnating (18 yoki yuqori): https://nodejs.org
+  2. Terminalda shu papkada:  npm install
+  3. Keyin:  npm run dev
+  4. Brauzerda:  http://localhost:5173
+  Tayyor sayt qilish (dist ni yangilash):  npm run build
+
+Demo (parol demo123):
+  900000001 — Buyurtma beruvchi 1
+  900000003 — Buyurtma beruvchi 2
+  900000002 — Qabul qiluvchi
+
+Rasmlar: my-images papkasiga tashlab, terminalda  npm run rasm

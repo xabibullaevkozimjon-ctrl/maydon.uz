@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: #0b2447; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: none } }
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes popIn { from { opacity: 0; transform: scale(.94) translateY(8px) } to { opacity: 1; transform: none } }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-100%) } to { opacity: 1; transform: none } }
+.anim-page { animation: fadeUp .35s ease both }
+.anim-up { animation: fadeUp .45s ease both }
+.anim-fade { animation: fadeIn .4s ease both }
+.anim-pop { animation: popIn .35s cubic-bezier(.2,.9,.3,1.2) both }
+.anim-down { animation: slideDown .4s ease both }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important } }
